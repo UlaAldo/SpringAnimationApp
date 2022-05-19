@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 class DataManager {
     
     static let sample = DataManager()
@@ -37,13 +38,19 @@ class DataManager {
                   "zoomOut",
                   "flash"
     ]
+    
     let curves = ["spring",
                  "linear",
                  "easeIn",
                  "easeOut",
                  "easeInOut"
     ]
+    
     let duration = (1.0...3.0)
     let delay = (0...1.0)
     let rotate = (0...5.0)
+    
+    
+    
+    private init() {}
 }

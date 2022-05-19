@@ -29,8 +29,8 @@ class ViewController: UIViewController {
                                                         duration: 1.5,
                                                         delay: 0.2,
                                                         rotate: 2.2)
-
-            animaLabel.text = """
+        
+        animaLabel.text = """
                             Animation
                         
                             name: \(index.name)
@@ -39,17 +39,17 @@ class ViewController: UIViewController {
                             delay: \(String(format: "%.2f", index.delay))
                             rotate: \(String(format: "%.2f", index.rotate))
                         """
-            runButton.setTitle("RUN \(index.name)", for: .normal)
-            
-            animaView.animation = index.name
-            animaView.curve = index.curve
-            animaView.duration = index.duration
-            animaView.delay = index.delay
-            animaView.rotate = index.rotate
-            animaView.animate()
-            
+        runButton.setTitle("RUN \(index.name)", for: .normal)
+        
+        animaView.animation = index.name
+        animaView.curve = index.curve
+        animaView.duration = index.duration
+        animaView.delay = index.delay
+        animaView.rotate = index.rotate
+        animaView.animate()
+        
     }
     
- 
+
 }
 

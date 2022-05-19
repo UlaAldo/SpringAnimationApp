@@ -32,7 +32,7 @@ struct Animation {
             )
             animations.append(oneAnima)
         }
-      return animations
+        return animations
     }
     
     
